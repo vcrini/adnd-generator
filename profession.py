@@ -63,7 +63,7 @@ class Profession(object):
         20 is a valid hit to roll armor class until ac is too lop
         """
 
-        y= self.thac0() - x
+        y = self.thac0() - x
 
         if y < 21:
             return y
@@ -71,6 +71,7 @@ class Profession(object):
             return 20
         else:
             return y - 6
+
     def thac(self):
         """
         returns hash with key representing armoring class and value hit needed

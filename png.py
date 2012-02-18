@@ -173,8 +173,12 @@ class PngView:
         print 'base thaco %d' % item.profession.thac0()
         print 'to hit table '
         x=item.profession.thac()
-        for i in range (-10,10):
-            print '%d:%d ' %(i,x[i]) , 
+        min,max=-10,10
+        for i in range (min,max):
+            print '%4d ' %i , 
+        print
+        for i in range (min,max):
+            print '%4d ' %x[i] , 
 
 
 pg = PngController()
