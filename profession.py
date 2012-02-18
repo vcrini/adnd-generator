@@ -55,7 +55,35 @@ class Profession(object):
         raise self.RaiseE('level advancement not implemented')
 
     def twenty_to_hit(self):
-        raise self.RaiseE('tewnty to hit not defined')
+        raise self.RaiseE('twenty to hit not defined')
+
+    def thacx(self, x=0):
+        """
+        To hit armoring class x
+        20 is a valid hit to roll armor class until ac is too lop
+        """
+
+        y= self.thac0() - x
+
+        if y < 21:
+            return y
+        elif 21 <= y < 26:
+            return 20
+        else:
+            return y - 6
+    def thac(self):
+        """
+        returns hash with key representing armoring class and value hit needed
+        """
+
+        x = {}
+        for i in range(-10, 10):
+            x[i] = self.thacx(i)
+        return x
+
+    def thac0(self):
+
+        return 21 + self.twenty_to_hit()
 
 
 class Fighter(Profession):

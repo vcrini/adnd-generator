@@ -170,9 +170,14 @@ class PngView:
         print 'petrification %d, polymorph %d' \
             % (item.race.ts.petrification, item.race.ts.polymorph)
         print 'spell %d' % item.race.ts.spell
+        print 'base thaco %d' % item.profession.thac0()
+        print 'to hit table '
+        x=item.profession.thac()
+        for i in range (-10,10):
+            print '%d:%d ' %(i,x[i]) , 
 
 
 pg = PngController()
 
-pg.main(level=9, profession=FIGHTER, race=DWARF,
+pg.main(level=3, profession=FIGHTER, race=DWARF,
         generator=BEST_OF_THREE)
