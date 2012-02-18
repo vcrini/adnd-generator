@@ -1,0 +1,43 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+This is a global configuration file. 
+Put here your constants you want to be accessed globally in your project.
+"""
+AC_ADJUSTMENT = 'ac adjustment'
+ASSASSIN = 'assassin'
+BEST_OF_THREE = 'best of three'
+BONUS_TO_DAMAGE = 'bonus to damage'
+BONUS_TO_HIT = 'bonus to hit'
+CHARISMA = 'charisma'
+CLERIC = 'cleric'
+CONSTITUTION = 'constitution'
+DEXTERITY = 'dexterity'
+DRUID = 'druid'
+DWARF = 'dwarf'
+ENCUMBRANCE_ADJUSTMENT = 'encumbrance adjustment'
+FIGHTER = 'fighter'
+HIT_DICE = 'hit dice'
+HIT_POINTS_BONUS = 'hit point bonus'
+HP_AFTER_TITLE_LEVEL = 'hp after title level'
+ILLUSIONIST = 'illusionist'
+INTELLIGENCE = 'intelligence'
+LOYALTY_BONUS = 'loyalty bonus'
+MAGIC_USER = 'magic user'
+MAJOR_TEST = 'major test'
+MAXIMUM_ADDITIONAL_LANGUAGES = 'maximum additional languages'
+MAXIMUM_HENCHMEN = 'maximum henchmen'
+MENTAL_SAVING_THROW_BONUS = 'mental saving throw bonus'
+MINOR_TEST = 'minor test'
+MISSILE_BONUS_TO_HIT = 'missile bonus to hit'
+PALADIN = 'paladin'
+PX = 'px'
+RAISE_DEAD = 'raise dead'
+RANGER = 'ranger'
+REACTION_BONUS = 'reaction bonus'
+STRENGTH = 'strength'
+SURPRISE_BONUS = 'surprise bonus'
+SYSTEM_SHOCK = 'system shock'
+THIEF = 'thief'
+UNLIMITED = 36
+WISDOM = 'wisdom'
