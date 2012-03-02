@@ -3,7 +3,7 @@
 
 from ability import Abilities, Ability
 from config import *
-from tes import rnd
+from dice import rnd
 from st import SavingThrows
 
 
@@ -35,7 +35,7 @@ class Profession(object):
     def create(self):
         self._class_abilities()
 
-    def raiseE(selt, text):
+    def raiseE(self, text):
         raise ProfessionException('%s for %s' % (text,
                                   str(self.__class__)))
 

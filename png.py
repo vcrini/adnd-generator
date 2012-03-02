@@ -5,12 +5,11 @@
 pngs manages png creation
 """
 
-from race import Race, Dwarf
-from profession import Profession, Fighter
 from ability import *
 from config import *
-from tes import rnd
-import pdb
+from dice import rnd
+from profession import Fighter
+from race import Dwarf
 
 
 class FighterGenerator:
@@ -173,11 +172,11 @@ class PngView:
         print 'base thaco %d' % item.profession.thac0()
         print 'to hit table '
         x=item.profession.thac()
-        min,max=-10,10
-        for i in range (min,max):
+        minimum,maximum=-10,10
+        for i in range (minimum,maximum):
             print '%4d ' %i , 
         print
-        for i in range (min,max):
+        for i in range (minimum,maximum):
             print '%4d ' %x[i] , 
 
 

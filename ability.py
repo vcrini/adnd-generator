@@ -3,10 +3,9 @@
 """
 manages al things related to abilities
 """
-import re
-import pdb
 from config import *
-from tes import rnd, rnd2
+from dice import rnd, rnd2
+import re
 
 
 class Ability(object):

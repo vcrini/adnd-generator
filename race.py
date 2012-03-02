@@ -5,11 +5,7 @@
 evertthing regarding race
 """
 
-from ability import Ability
-from st import SavingThrows
 from config import *
-import profession
-import pdb
 
 
 class RaceException(Exception):
@@ -32,7 +28,7 @@ class Race(object):
         self.ts = ts
         self.race_name = self.__class__.__name__
 
-    def raiseE(selt, text):
+    def raiseE(self, text):
         raise RaceException('%s for %s' % (text, str(self.__class__)))
 
     def alterAbilities(self):
@@ -123,9 +119,9 @@ class Dwarf(Race):
         return 90
 
     def professionAccessible(self):
-        str = self.abilities.get(STRENGTH).value_no_hundreds
+        strength = self.abilities.get(STRENGTH).value_no_hundreds
         return {
-            FIGHTER: (9 if str >= 18 else (8 if str == 17 else 7)),
+            FIGHTER: (9 if strength >= 18 else (8 if strength == 17 else 7)),
             ASSASSIN: 9,
             CLERIC: 8,
             THIEF: UNLIMITED,
