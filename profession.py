@@ -1,9 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from ability import Abilities, Ability
-from config import *
-from dice import rnd
+from ability import Abilities
+from config import * #@UnusedWildImport
 from st import SavingThrows
 
 

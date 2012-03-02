@@ -3,7 +3,7 @@
 """
 manages al things related to abilities
 """
-from config import *
+from config import * #@UnusedWildImport
 from dice import rnd, rnd2
 import re
 

@@ -3,7 +3,7 @@ First edition Character
 """
 from dice import rnd
 class Character:
-    def firstupper(f):
+    def firstupper(f): #@NoSelf
         def _firstupper(*args, **kw):
             r = f(*args, **kw)
             # capitalize first letter

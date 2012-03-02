@@ -5,9 +5,8 @@
 pngs manages png creation
 """
 
-from ability import *
-from config import *
-from dice import rnd
+from ability import * #@UnusedWildImport
+from config import * #@UnusedWildImport
 from profession import Fighter
 from race import Dwarf
 

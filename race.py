@@ -5,7 +5,7 @@
 evertthing regarding race
 """
 
-from config import *
+from config import * #@UnusedWildImport
 
 
 class RaceException(Exception):
